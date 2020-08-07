@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+
+<html lang="es-cl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--code and design by carrothuerta http://benjamin.bhc.cl-->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="materialize/1.0.0/css/materialize.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="text/javascript" src="jquery/2.1.1/jquery.js"></script>
+    <script src="materialize/1.0.0/js/materialize.js">
+    </script>
+    <style>
+    .hiddenbtn{
+        display:block;
+    }
+    </style>
+    <meta charset="utf-8" />
+    <title>Horarios CDV</title>
+</head>
+<body oncontextmenu="return false">
+
+    <nav class="green ligthen-2">
+        <!-- navbar content here  -->
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo left  hide-on-med-and-down"></a>
+            <a href="index.html" class="brand-logo center hide-on-large-only"></a>
+            <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+            <script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'T6T41S2MH'); kofiwidget2.draw();</script>
+        </div>
+
+    </nav>
+
+
+
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h5>Mantener una página requiere trabajo</h5>
+            <p>Para ayudarme a seguir actualizando este sitio y poder seguir pagando el servidor por favor considere donar con alguna de las opciones mostradas</p>
+            <div class="section"></div>
+            <div class="center" id="myDIV" style="display:none;">
+                <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                    <li class="tab"><a class="blue black-text" href="#test2" onclick="location.href = 'https://www.paypal.me/carrothuerta'"><i class="fab fa-paypal"></i> PayPal</a></li>
+                    <li class="tab"><a class="black-text red" href="#test1"><i class="fas fa-university"></i> Transferencia</a></li>
+                    <!---->
+                </ul>
+
+                <div id="test1" class="col s12">
+                    <p>Nombre: Benjamin Huerta</p>
+                    <p>Banco: BancoEstado</p>
+                    <p>Tipo de cuenta: Vista/Rut</p>
+                    <p>N° de Cuenta: 217564735</p>
+                    <p>RUT: 21.756.473-5</p>
+                    <p>Correo: benjaminhuertac@gmail.com</p>
+                </div>
+                <div id="test2" class="col s12"><p></p></div>
+            </div>
+        </div>
+
+        <div class="center">
+        <button class="btn green" onclick="myFunction()">Donar</button>
+        </div>
+
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-red red accent-2 btn-flat">Cerrar</a>
+        </div>
+    </div>
+
+
+
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+
+
+    <!-- Element Showed -->
+    <div class="fixed-action-btn">
+        <a id="menu" class="waves-effect waves-light btn btn-floating btn-large green" onclick="$('.tap-target').tapTarget('open')"><i class="material-icons">help_outline</i></a>
+    </div>
+    <div class="container">
+
+        <ul class="collapsible popout">
+            <li>
+                <div class="collapsible-header"><i class="material-icons">school</i>Ed. Media</div>
+                <div class="collapsible-body">
+                    <a href="media/Ia.html" class="btn">I°a</a>
+                    <div class="section"></div>
+                    <div class="divider"></div>
+                    <div class="section"></div>
+                    <a href="media/IIa.html" class="btn">II°a</a>
+                    <div class="section"></div>
+                    <div class="divider"></div>
+                    <div class="section"></div>
+                    <a href="media/IIIa.html" class="btn">III°a</a>
+                    <div class="section"></div>
+                    <div class="divider"></div>
+                    <div class="section"></div>
+                    <a href="media/IVa.html" class="btn">IV°a</a>
+                    <a href="media/IVb.html" class="btn">IV°b</a>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">book</i>Ed. Basica</div>
+                <div class="collapsible-body"><span><i class="material-icons">warning</i>Under construction<i class="material-icons">warning</i></span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">mail</i>Correos Electronicos</div>
+                <div class="collapsible-body">
+                    <p>Web Admin</p><a href="mailto:benjaminhuertac@gmail.com">benjaminhuertac@gmail.com</a>
+                    <div class="divider"></div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+
+
+
+
+    <!-- Tap Target Structure -->
+
+    <div class="tap-target green" data-target="menu">
+        <div class="tap-target-content">
+            <h5>Como ingresar</h5>
+            <p>Para acceder a un curso primero haz click en "Ed. Media" o "Ed. Basica" y<br> luego selecciona el curso deseado</p>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+
+    <script>
+        M.toast({ html: 'Cursos actualizados!' })
+
+    </script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.tabs').tabs();
+        });
+    </script>
+
+    <script>
+        //$(document).ready(function () {
+         //   $('#modal').modal();
+       // });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+         var Modalelem = document.querySelector('.modal');
+         var instance = M.Modal.init(Modalelem);
+         instance.open();
+      });
+
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.tap-target').tapTarget();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+    </script>
+
+    <script type="text/javascript">
+        //code and design by carrothuerta http://benjamin.bhc.cl
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        function disableCtrlKeyCombination(e) {
+            var forbiddenKeys = new Array("a", "s", "c", "x", "u");
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode;
+                //IE
+                if (window.event.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            else {
+                key = e.which;
+                //firefox
+                if (e.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) {
+                    //case-insensitive comparation
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    </script>
+    <!-- scripts end -->
+
+    <footer class="page-footer center green ligthen-2 black-text">
+        <a href="http://benjamin.bhc.cl"><i class="fas fa-cat black-text"></i></a>
+    </footer>
+    <!--code and design by carrothuerta http://benjamin.bhc.cl-->
+</body>
+</html>

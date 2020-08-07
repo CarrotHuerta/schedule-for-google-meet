@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="es-cl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--code and design by carrothuerta http://benjamin.bhc.cl-->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="materialize/1.0.0/css/materialize.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="text/javascript" src="jquery/2.1.1/jquery.js"></script>
+    <script src="materialize/1.0.0/js/materialize.js">
+    </script>
+    <style>
+    </style>
+    <meta charset="utf-8" />
+    <title>Horario IV°a</title>
+</head>
+<body oncontextmenu="return false">
+
+    <nav class="green ligthen-2">
+        <!-- navbar content here  -->
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo left  hide-on-med-and-down"></a>
+            <a href="index.html" class="brand-logo center hide-on-large-only"></a>
+        </div>
+
+    </nav>
+
+    <div class="section"></div>
+
+    <div class="container">
+
+        <table class="responsive-table centered">
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th><a class="black-text" href="https://www.youtube.com/watch?v=DgCv16c6Irc">Jueves</a></th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>8:45 a 9:30</td>
+                    <td></td>
+                    <td class="blue"><a href="https://meet.google.com/qdb-pney-hee" class="btn black-text blue">Matematica</a></td>
+                </tr>
+                <tr>
+                    <td>9:30 a 10:15</td>
+                    <td class="green"><a href="https://meet.google.com/htu-xxez-rdk" class="btn black-text green">Ed.Ciudadana</a></td>
+                    <td class="blue"><a href="https://meet.google.com/qdb-pney-hee" class="btn black-text blue">Matematica</a></td>
+
+
+                </tr>
+                <tr>
+                    <td>10:30 a 11:15</td>
+
+                </tr>
+                <tr>
+                    <td>11:15 a 12:00</td>
+                    <td></td>
+                    <td class="red accent-4"><a href="https://meet.google.com/wtm-adva-bai" class="btn black-text red accent-4">Lenguaje</a></td>
+                    <td></td>
+                    <td></td>
+                    <td class="purple lighten-2"><a href="https://meet.google.com/tot-tgzv-dhd" class="btn black-text purple lighten-2">Ciencias</a></td>
+
+
+                </tr>
+                <tr>
+                    <td>12:15 a 13:00</td>
+                    <td></td>
+                    <td></td>
+                    <td class="blue"><a href="https://meet.google.com/qdb-pney-hee" class="btn black-text blue">Matematica</a></td>
+                    <td class="green"><a href="https://meet.google.com/htu-xxez-rdk" class="btn black-text green">Ed.Ciudadana</a></td>
+                </tr>
+                <tr>
+                    <td>13:00 a 13:45</td>
+
+                </tr>
+                <tr>
+                    <td>14:30 a 15:15</td>
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+
+
+    <!-- Scripts -->
+
+
+    <script type="text/javascript">
+        //code and design by carrothuerta http://benjamin.bhc.cl
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        function disableCtrlKeyCombination(e) {
+            var forbiddenKeys = new Array("a", "s", "c", "x", "u");
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode;
+                //IE
+                if (window.event.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            else {
+                key = e.which;
+                //firefox
+                if (e.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) {
+                    //case-insensitive comparation
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    </script>
+    <!-- scripts end -->
+
+    <footer class="page-footer center green ligthen-2 black-text">
+        <a href="http://benjamin.bhc.cl"><i class="fas fa-cat black-text"></i></a>
+    </footer>
+    <!--code and design by carrothuerta http://benjamin.bhc.cl-->
+</body>
+</html>
