@@ -9,7 +9,6 @@ This repository contains the code for the Schedule for Google Meet website, deve
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
@@ -47,6 +46,3 @@ Contributions are welcome! If you'd like to contribute to the project, you can f
 4. Commit and push your changes to your forked repository.
 5. Create a pull request to submit your changes for review.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
