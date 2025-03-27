@@ -1,6 +1,6 @@
 # Schedule for Google Meet
 
-This repository contains the code for the Schedule for Google Meet website, developed by carrothuerta. The website provides a user-friendly interface for accessing and viewing class schedules for different courses, along with integrated Google Meet links for virtual class sessions.
+This repository contains the code for the Schedule for Google Meet website. The website provides a user-friendly interface for accessing and viewing class schedules for different courses, along with integrated Google Meet links for virtual class sessions.
 
 ## Table of Contents
 
@@ -36,13 +36,4 @@ To run the Schedule for Google Meet website locally, follow these steps:
 3. Click on Google Meet links to join virtual class sessions.
 4. Toggle light/dark mode by clicking the toggle button in the navigation bar.
 
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to the project, you can follow these steps:
-
-1. Fork the repository to your GitHub account.
-2. Create a new branch for your changes.
-3. Make your modifications and improvements.
-4. Commit and push your changes to your forked repository.
-5. Create a pull request to submit your changes for review.
 
